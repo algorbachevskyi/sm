@@ -8,7 +8,205 @@
 </head>
 <body>
 
-<%= yield %>
 
+<!-- begin:navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#clotheshop-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="clotheshop-navbar">
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="divider-vertical"></li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#">ПОШУК <b class="caret"></b></a>
+          <ul class="dropdown-menu search-panel" id="search-panel">
+            <li>
+
+              <div class="wrapper">
+
+                <div class="search-column">
+                  <div class="search-title">Тип</div>
+                  <div class="search-content">
+
+                    <span>Батареї</span>
+                    <span>Акомулятори</span>
+                    <span>Панелі</span>
+                    <span>Батареї</span>
+                    <span>Акомулятори</span>
+                    <span>Панелі</span>
+                    <span>Батареї</span>
+                    <span>Акомулятори</span>
+                    <span>Панелі</span>
+
+                  </div>
+                </div>
+
+                <div class="search-column">
+                  <div class="search-title">Потужність</div>
+                  <div class="search-content">
+
+                    <span>10 Ват</span>
+                    <span>100 Ват</span>
+                    <span>200 Ват</span>
+                    <span>500 Ват</span>
+                    <span>1000 Ват</span>
+                    <span>1300 Ват</span>
+
+                  </div>
+                </div>
+
+                <div class="search-column">
+                  <div class="search-title">Виробник</div>
+                  <div class="search-content">
+
+                    <span>Samsung</span>
+                    <span>SunSystems</span>
+                    <span>Solar System</span>
+                    <span>Tesla</span>
+                    <span>Mercedes Benz</span>
+
+                  </div>
+                </div>
+
+                <div class="search-column">
+                  <div class="search-title">Тип</div>
+                  <div class="search-content">
+
+                    <span>Батареї</span>
+                    <span>Акомулятори</span>
+                    <span>Панелі</span>
+                    <span>Батареї</span>
+                    <span>Акомулятори</span>
+                    <span>Панелі</span>
+                    <span>Батареї</span>
+                    <span>Акомулятори</span>
+                    <span>Панелі</span>
+
+                  </div>
+                </div>
+
+                <div class="search-column">
+                  <div class="search-title">Потужність</div>
+                  <div class="search-content">
+
+                    <span>10 Ват</span>
+                    <span>100 Ват</span>
+                    <span>200 Ват</span>
+                    <span>500 Ват</span>
+                    <span>1000 Ват</span>
+                    <span>1300 Ват</span>
+
+                  </div>
+                </div>
+
+                <div class="search-column">
+                  <div class="search-title">Виробник</div>
+                  <div class="search-content">
+
+                    <span>Samsung</span>
+                    <span>SunSystems</span>
+                    <span>Solar System</span>
+                    <span>Tesla</span>
+                    <span>Mercedes Benz</span>
+
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-default btn-search" style="float: right;">Знайти</button>
+
+              </div>
+
+
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+</nav>
+<!-- end:navbar -->
+
+<!-- begin:content -->
+<div class="container">
+  <!-- begin:logo -->
+  <div class="row">
+    <div class="col-md-6 col-sm-6 col-xs-6">
+      <div class="logo">
+
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-6">
+      <div class="account">
+        <ul>
+          <li id="your-account">
+            <div class="hidden-xs">
+              <h4><a href="#">Профіль</a></h4>
+              <p>Привіт, <a href="#">log in</a></p>
+            </div>
+            <div class="visible-xs">
+              <a href="#" class="btn btn-primary"><i class="fa fa-user"></i></a>
+            </div>
+          </li>
+          <li>
+            <div class="hidden-xs">
+              <h4><a href="#">Кошик</a></h4>
+              <p><strong>2 Продукт(а)</strong></p>
+            </div>
+            <div class="visible-xs">
+              <a href="#" class="btn btn-primary"><span class="cart-item">2</span> <i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end:logo -->
+
+  <!-- begin:nav-menus -->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="nav-menus">
+        <ul class="nav nav-pills">
+          <li class="active"><a href="index.html">Головна</a></li>
+
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">Каталог товарів <b class="caret"></b></a>
+            <ul class="dropdown-menu" id="menu1">
+              <li>
+                <a href="categories.html">Батареї <b class="caret"></b></a>
+                <ul class="dropdown-menu sub-menu">
+                  <li><a href="categories.html">Сонячні</a></li>
+                  <li><a href="categories.html">Комплектуючі</a></li>
+                  <li><a href="categories.html">Підвищеної продуктивності</a></li>
+                  <li><a href="categories.html">Зелені</a></li>
+                </ul>
+              </li>
+              <li><a href="categories.html">Станції</a></li>
+              <li><a href="categories.html">Акумулятори</a></li>
+              <li class="divider"></li>
+              <li><a href="categories.html">Різне</a></li>
+            </ul>
+          </li>
+
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="contact.html">Контакти</a></li>
+          <li><a href="#">Оплата та доставка</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end:nav-menus -->
+
+
+<%= yield %>
+</div>
 </body>
 </html>

@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
+  get ':name' => 'index#index'
+  # бавився зроутами - почистити
   get 'index/index'
+  root 'index#index'
+
+  get 'index_index' => 'index#index'
+
+  get 'home' => 'index#index', as: 'home_path'
+
+  get 'google' => redirect('http://google.com.ua')
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
