@@ -148,7 +148,7 @@
         <ul>
           <li id="your-account">
             <div class="hidden-xs">
-              <h4><a href="#">Профіль</a></h4>
+              <h4><a href="#"><%= @name %></a></h4>
               <p>Привіт, <a href="#">log in</a></p>
             </div>
             <div class="visible-xs">
@@ -175,9 +175,9 @@
     <div class="col-md-12">
       <div class="nav-menus">
         <ul class="nav nav-pills">
-          <li class="active"><a href="index.html">Головна</a></li>
+          <li class="<%= @active_home %>"><a href="/home">Головна</a></li>
 
-          <li class="dropdown">
+          <li class="dropdown <%= @active_products %>">
             <a href="#" data-toggle="dropdown" class="dropdown-toggle">Каталог товарів <b class="caret"></b></a>
             <ul class="dropdown-menu" id="menu1">
               <li>
@@ -196,9 +196,9 @@
             </ul>
           </li>
 
-          <li><a href="about.html">Про нас</a></li>
-          <li><a href="contact.html">Контакти</a></li>
-          <li><a href="#">Оплата та доставка</a></li>
+          <li class="<%= @active_about %>"><a href="/about">Про нас</a></li>
+          <li class="<%= @active_contacts %>"><a href="/contacts">Контакти</a></li>
+          <li class="<%= @active_payments %>"><a href="/payments">Оплата та доставка</a></li>
         </ul>
       </div>
     </div>
@@ -207,6 +207,81 @@
 
 
 <%= yield %>
+
+  <!-- begin:footer -->
+  <div class="row">
+    <div class="col-md-12 footer">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="widget">
+            <h3><span>Контактна інформація</span></h3>
+            <address>
+              76000, м.Івано-Франківськ, вул. Незалежності 37<br>
+              Конт. тел. : (0274) 4411005<br>
+              Email : sunmarket@gmail.com<br>
+            </address>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="widget">
+            <h3><span>Користувачеві</span></h3>
+            <ul class="list-unstyled list-star">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Оплата й доставка</a></li>
+              <li><a href="#">Про нас</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="widget">
+            <h3><span>Наші представництва</span></h3>
+            <ul class="list-unstyled list-star">
+              <li><a href="#">м. Калуш</a></li>
+              <li><a href="#">м. Надвірна</a></li>
+              <li><a href="#">м. Колмия</a></li>
+              <li><a href="#">м. Чернівці</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="widget">
+            <h3><span>Отримувати новини про нас</span></h3>
+            <p>Підпишіться на нашу поштову розсилку та отримуйте найсвіжіші новини про наш новий асортимент товару на Вашу електронну скриньку!</p>
+            <form>
+              <input type="email" class="form-control" name="email" placeholder="Ваш Email : "><br>
+              <input type="submit" class="btn btn-warning" value="Підписатися">
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- end:footer -->
+
+  <!-- begin:copyright -->
+  <div class="row">
+    <div class="col-md-12 copyright">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 copyright-left">
+          <p>Copyright &copy; Sunmarket 2014. All right reserved.</p>
+        </div>
+        <div class="col-md-6 col-sm-6 copyright-right">
+          <ul class="list-unstyled list-social">
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end:copyright -->
 </div>
+<!-- end:content -->
 </body>
 </html>

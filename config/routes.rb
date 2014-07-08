@@ -1,12 +1,23 @@
 Rails.application.routes.draw do
-  get ':name' => 'index#index'
+  get 'admin/index'
+
+  # get ':name' => 'index#index'
   # бавився зроутами - почистити
+
+  # main routes
   get 'index/index'
   root 'index#index'
 
   get 'index_index' => 'index#index'
 
   get 'home' => 'index#index', as: 'home_path'
+  get 'about' => 'index#about', as: 'about_path'
+  get 'contacts' => 'index#contacts', as: 'contacts_path'
+  get 'payments' => 'index#payments', as: 'payments_path'
+
+  # admin routes
+  get 'administrator' => 'admin#index'
+
 
   get 'google' => redirect('http://google.com.ua')
 

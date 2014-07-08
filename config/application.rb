@@ -21,3 +21,11 @@ module Sm
     # config.i18n.default_locale = :de
   end
 end
+
+# відключаємо генерацію ресурсів для контроллера при його створенні
+# config.generators do |g|
+#   g.assets false
+# end
+
+# підключаємо шрифти
+# config.assets.paths << Rails.root.join("app", "assets", "fonts")
